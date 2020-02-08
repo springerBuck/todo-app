@@ -1,0 +1,25 @@
+// Core configuration
+{
+  "extends": ["@springernature/eslint-config", "plugin:vue/recommended"],
+  "rules": {
+    // Additional, per-project rules...
+    "unicorn/filename-case": [
+      "error",
+      {
+        "case": "kebabCase",
+        "ignore": [
+          ".vue$"
+        ]
+      }
+    ],
+    "indent": [1, "tab"]
+  },
+  "overrides": [
+    // Overrides for specific files or directories
+  ],
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true
+  }
+}
